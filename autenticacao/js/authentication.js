@@ -1,5 +1,4 @@
 var authEmailPassButton = document.getElementById('authEmailPassButton');
-var authFacebookButton = document.getElementById('authFacebookButton');
 var createUserButton = document.getElementById('createUserButton');
 var logOutButton = document.getElementById('logOutButton');
 
@@ -56,13 +55,6 @@ logOutButton.addEventListener('click', function () {
 authGoogleButton.addEventListener('click', function () {
    
     var provider = new firebase.auth.GoogleAuthProvider();
-    signIn(provider);
-});
-
-
-authFacebookButton.addEventListener('click', function () {
-   
-    var provider = new firebase.auth.FacebookAuthProvider();
     signIn(provider);
 });
 
