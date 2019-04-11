@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="baas-front-end">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BaaS Front-End</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <ui-view></ui-view>
+    <script src="./bower_components/angular/angular.min.js"></script>
+    <script src="./bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="./bower_components/angularfire/dist/angularfire.min.js"></script>
+    <script src="./bower_components/firebase/firebase.js"></script>
+    
+    <script src="./app.js"></script>
+    <script src="./app.core.js"></script>
+    <script src="./app.config.js"></script>
+    <script src="./app.controller.js"></script>
+
+    <script src="./home/home.js"></script>
+    <script src="./home/home.config.js"></script>
+    <script src="./home/home.controller.js"></script>
+
+    <script src="./person/person.js"></script>
+    <script src="./person/person.config.js"></script>
+    <script src="./person/person.factory.js"></script>
+    <script src="./person/person.controller.js"></script>
+    <script src="./person/create.controller.js"></script>
+    <script src="./person/edit.controller.js"></script>
+
+    <script src="./login.factory.js"></script>
+    <script src="./login.controller.js"></script>
+
+    
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyBamPySnVocnWH0gtABRg8ERmVSQadlnoc",
+        authDomain: "unipeprojeto-fe37c.firebaseapp.com",
+        databaseURL: "https://unipeprojeto-fe37c.firebaseio.com",
+        projectId: "unipeprojeto-fe37c",
+        storageBucket: "unipeprojeto-fe37c.appspot.com",
+        messagingSenderId: "576600176295"
+    };
+    firebase.initializeApp(config);
+    </script>
+</body>
+</html>
